@@ -1,0 +1,30 @@
+html, body {
+
+    background: #000000;
+  
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body:before {
+
+    
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+html.dark, body.dark {
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000d19',GradientType=1 );
+}
+
+#container {
+    cursor: pointer;
+}
